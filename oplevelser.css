@@ -19,7 +19,6 @@
     margin: 0%;
     font-family: "Shanti", sans-serif;
     color: #055676;
-    padding: 0%;
   }
 
 
@@ -149,7 +148,7 @@
     /*logo*/
   
       .logo {
-        position: absolute; 
+        position: absolute ; 
         max-width: 100%;
         height: 333px;
         margin-right: 50%;
@@ -217,141 +216,118 @@ header>nav{
             margin-right: 20px;
             border-radius: 15px 16px;
             margin-left: 3%;
-            margin-right: 1%; 
+            margin-right: 3%; 
         }
         nav a:hover {
             color: var(--denGronne);
           }
+
+          .ikoner{
+            margin-right: 5cm;
+            margin-top: -35%;
+        }
         }
 /*----------------HEADER END-------------------*/ 
 
-/* stor billede start*/
-    /* computer*/
-@media screen and (min-width:768px){
-    .hero-ig{
-    display: flex;
-    position: relative;
-    object-fit: contain;
+/*-----INDHOLD STARTER-----*/
+h1{
+    text-align: center;
+}
+
+.billeder {
+    display: grid;
+    gap: 4px;
     width: 100%;
+    margin: auto;
+    padding: 0px;
+}
+
+.ting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ting img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    padding: 0;
-    margin: 0;
+    object-fit: cover;
+    margin-bottom: 2px;
+}
+
+.ting h2,
+.ting p {
+    margin: 8px 0;
+    max-width: 300px;
+    font-family: "Shanti", sans-serif;
+    color: #055676;
+}
+
+@media screen and (max-width: 768px) {
+    .billeder {
+        grid-template-columns: 1fr;
     }
 }
 
-    /* mobil*/
-    @media screen and (max-width:768px){
-      .hero-ig{
-      display: flex;
-      object-fit: contain;
-      width: 100%;
-      height: auto;
-      padding: 0;
-      margin: 0;
+@media screen and (min-width: 768px) {
+    .billeder {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-  /* stor billede end*/
-  
-/*Tekst størrelse start*/
-/*comuter*/
-  @media screen and (min-width:768px){
-    h1{
-        font-size: 30px;
-        margin-left: 10px
-      }
-    
-      h2{
-        font-size: 40px;
-        margin-left: 10px;
-        color: var(--denGronne);
-        padding: 0%;
-        letter-spacing: 8px;
-      }
-    
-      p{
-        font-size: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        color: var(--denSorte);
-        color: var(--denSorte);
-        letter-spacing: 6px;
-      }
-  }
-
-  /*mobil*/
-  @media screen and (max-width:768px){
-    h1{
-        font-size: 15px;
-        margin-left: 10px
-      }
-    
-      h2{
-        font-size: 20px;
-        margin-left: 10px;
-        color: var(--denGronne);
-        letter-spacing: 4px;
-      }
-    
-      p{
-        font-size: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-        color: var(--denSorte);
-        letter-spacing: 3px;
-      }
-  }
 
 /*-----------Footer start------------*/
     /*mobil*/
- @media screen and (max-width:768px) {
-    footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    text-align: center;
-    padding-top: 40%;
-    padding-bottom: 5%;
-    margin-bottom: 2%;    
-  }
-  footer > div > h3 {
-    font-size: 10px;
-}
-
-footer>div>p{
-    font-size: 8px;
-}
-}
-
-/*computer*/
-@media screen and (min-width:768px) {
-    footer {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        text-align: center;
-        padding-top: 20%;
-        margin-bottom: 2%;
-        padding-bottom: 40px;
-        color: #055676;
+    @media screen and (max-width:768px) {
+      footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-around;
+      text-align: center;
+      padding-top: 40%;
+      padding-bottom: 5%;
+      margin-bottom: 2%;    
     }
-
     footer > div > h3 {
-      font-size: 20px;
+      font-size: 10px;
   }
   
   footer>div>p{
-      font-size: 16px;
+      font-size: 8px;
   }
-}
-
-footer > div > h3 {
-    color: var(--denBlaa);
-}
-
-footer > div > p {
-    color: var(--denBlaa);
-}
-/*FOOTER END*/
- 
+  }
+  
+  /*computer*/
+  @media screen and (min-width:768px) {
+      footer {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content:space-around;
+          text-align: center;
+          padding-top: 20%;
+          margin-bottom: 2%;
+          padding-bottom: 40px;
+          color: #055676;
+      }
+  
+      footer > div > h3 {
+        font-size: 20px;
+    }
+    
+    footer>div>p{
+        font-size: 16px;
+    }
+  }
+  
+  footer > div > h3 {
+      color: var(--denBlaa);
+  }
+  
+  footer > div > p {
+      color: var(--denBlaa);
+  }
+  /*FOOTER END*/
+   

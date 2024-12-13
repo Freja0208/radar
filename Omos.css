@@ -149,7 +149,7 @@
     /*logo*/
   
       .logo {
-        position: absolute; 
+        position: absolute ; 
         max-width: 100%;
         height: 333px;
         margin-right: 50%;
@@ -179,7 +179,7 @@
         }
     
     .ikoner{
-            margin-left: 12cm;
+            margin-left: 15cm;
             margin-top: -35%;
         }
     }
@@ -221,27 +221,17 @@ header>nav{
         }
         nav a:hover {
             color: var(--denGronne);
-          }
         }
+          .ikoner{
+            padding-right: 5%;
+        }
+    }
 /*----------------HEADER END-------------------*/ 
 
-/* stor billede start*/
-    /* computer*/
-@media screen and (min-width:768px){
-    .hero-ig{
-    display: flex;
-    position: relative;
-    object-fit: contain;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    }
-}
-
-    /* mobil*/
-    @media screen and (max-width:768px){
-      .hero-ig{
+/*-----INDHOLD START-----*/
+/*mobil*/
+@media screen and (max-width: 768px){
+  .hero-ig{
       display: flex;
       object-fit: contain;
       width: 100%;
@@ -249,109 +239,113 @@ header>nav{
       padding: 0;
       margin: 0;
     }
-}
-  /* stor billede end*/
-  
-/*Tekst størrelse start*/
-/*comuter*/
-  @media screen and (min-width:768px){
+
     h1{
-        font-size: 30px;
-        margin-left: 10px
-      }
-    
-      h2{
-        font-size: 40px;
-        margin-left: 10px;
-        color: var(--denGronne);
-        padding: 0%;
-        letter-spacing: 8px;
-      }
-    
-      p{
-        font-size: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        color: var(--denSorte);
-        color: var(--denSorte);
-        letter-spacing: 6px;
-      }
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 4px;
+    }
+    h2{
+      color: var(--denGronne);
+      margin-left: 15px;
+      font-size: 15px;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+
+    p{
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 10px;
+      letter-spacing: 4px;
+    }
   }
 
-  /*mobil*/
-  @media screen and (max-width:768px){
-    h1{
-        font-size: 15px;
-        margin-left: 10px
+/*computer*/
+@media screen and (min-width: 768px){
+  .hero-ig{
+      display: flex;
+      position: relative;
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+      padding: 0;
       }
-    
+
+      h1{
+        text-align: center;
+        letter-spacing: 6px;
+        font-size: 40px;
+      }
       h2{
-        font-size: 20px;
-        margin-left: 10px;
         color: var(--denGronne);
-        letter-spacing: 4px;
+        margin-left: 15px;
+        font-size: 30px;
+        letter-spacing: 6px;
+        text-align: center;
       }
-    
+  
       p{
-        font-size: 10px;
         margin-left: 20px;
         margin-right: 20px;
-        color: var(--denSorte);
-        letter-spacing: 3px;
+        letter-spacing: 5px;
+        font-size: 20px;
       }
-  }
+    }
+
+/*-----Indhold slut-----*7
 
 /*-----------Footer start------------*/
     /*mobil*/
- @media screen and (max-width:768px) {
-    footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    text-align: center;
-    padding-top: 40%;
-    padding-bottom: 5%;
-    margin-bottom: 2%;    
-  }
-  footer > div > h3 {
-    font-size: 10px;
-}
-
-footer>div>p{
-    font-size: 8px;
-}
-}
-
-/*computer*/
-@media screen and (min-width:768px) {
-    footer {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        text-align: center;
-        padding-top: 20%;
-        margin-bottom: 2%;
-        padding-bottom: 40px;
-        color: #055676;
+    @media screen and (max-width:768px) {
+      footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-around;
+      text-align: center;
+      padding-top: 40%;
+      padding-bottom: 5%;
+      margin-bottom: 2%;    
     }
-
     footer > div > h3 {
-      font-size: 20px;
+      font-size: 10px;
   }
   
   footer>div>p{
-      font-size: 16px;
+      font-size: 8px;
   }
-}
-
-footer > div > h3 {
-    color: var(--denBlaa);
-}
-
-footer > div > p {
-    color: var(--denBlaa);
-}
-/*FOOTER END*/
- 
+  }
+  
+  /*computer*/
+  @media screen and (min-width:768px) {
+      footer {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content:space-around;
+          text-align: center;
+          padding-top: 20%;
+          margin-bottom: 2%;
+          padding-bottom: 40px;
+          color: #055676;
+      }
+  
+      footer > div > h3 {
+        font-size: 20px;
+    }
+    
+    footer>div>p{
+        font-size: 16px;
+    }
+  }
+  
+  footer > div > h3 {
+      color: var(--denBlaa);
+  }
+  
+  footer > div > p {
+      color: var(--denBlaa);
+  }
+  /*FOOTER END*/
+   
